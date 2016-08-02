@@ -1,0 +1,57 @@
+@font-face { font-family: 'latoregular'; src: url("font-kit/lato-reg.eot"); src: url("font-kit/lato-reg.eot?#iefix") format("embedded-opentype"), url("font-kit/lato-reg.woff") format("woff"), url("font-kit/lato-reg.ttf") format("truetype"), url("font-kit/lato-reg.svg#latoregular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'latoblack'; src: url("font-kit/lato-bla.eot"); src: url("font-kit/lato-bla.eot?#iefix") format("embedded-opentype"), url("font-kit/lato-bla.woff") format("woff"), url("font-kit/lato-bla.ttf") format("truetype"), url("font-kit/lato-bla.svg#latoblack") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'latolight'; src: url("font-kit/lato-lig.eot"); src: url("font-kit/lato-lig.eot?#iefix") format("embedded-opentype"), url("font-kit/lato-lig.woff") format("woff"), url("font-kit/lato-lig.ttf") format("truetype"), url("font-kit/lato-lig.svg#latolight") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'latobold'; src: url("font-kit/lato-bol.eot"); src: url("font-kit/lato-bol.eot?#iefix") format("embedded-opentype"), url("font-kit/lato-bol.woff") format("woff"), url("font-kit/lato-bol.ttf") format("truetype"), url("font-kit/lato-bol.svg#latobold") format("svg"); font-weight: normal; font-style: normal; }
+body { height: 100vh; font: 100% latoregular, sans-serif; color: #313b3d; background: url("../images/bg.png") no-repeat scroll center center #F3F4F6; background-repeat: repeat; background-size: 100%; }
+
+.main-box { margin: 20px auto; box-shadow: 1px 3px 12px #97A3BB; }
+.main-box .close-customize { color: #fff; padding: 7px 0; font-size: 24px; margin-right: 24px; }
+@media screen and (min-width: 960px) { .main-box .close-customize { font-size: 28px; } }
+.main-box .header-main { background: #90CAD6; color: #fff; }
+.main-box .header-main h5 { font-family: latobold, sans-serif; padding: 10px; font-size: 18px; }
+@media screen and (min-width: 960px) { .main-box .header-main h5 { font-size: 20px; } }
+.main-box .customize-container { display: table; background: #F4F5F7; padding: 10px; margin: 0 auto; clear: both; }
+.main-box .customize-container .cutomizeResult { background: #fff; position: relative; display: table-cell; vertical-align: middle; float: none; }
+.main-box .customize-container .cutomizeResult .layoutContainer { /* position: absolute; top: 50%; transform: translate(-2%,-50%);*/ }
+.main-box .customize-container .cutomizeResult .layoutContainer img { width: 100%; height: auto; }
+.main-box .customize-container .setting-panel { display: table-cell; float: none; }
+.main-box .customize-container .setting-panel nav ul li { display: inline-block; float: right; }
+.main-box .customize-container .setting-panel nav ul li a { color: #809a9f; font-family: latoregular, sans-serif; text-decoration: none; padding: 6px 8px; background: #fff; display: block; font-size: 16px; border-radius: 5px 5px 0 0; }
+.main-box .customize-container .setting-panel nav ul li a i { color: #809a9f; margin-right: 5px; vertical-align: middle; }
+.main-box .customize-container .setting-panel nav ul li a:hover { color: #1B1B4C; }
+.main-box .customize-container .setting-panel .setting-controller { background: -webkit-linear-gradient(left, #FFFFFF 0%, #FFFFFF 50%, #c6d6d9 0, #FFFFFF 50.3%); background: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 50%, #c6d6d9 0, #FFFFFF 50.3%); background-color: #fff; }
+.main-box .customize-container .setting-panel .setting-controller .gernal-advance-setting { height: 100%; position: static; }
+.main-box .customize-container .setting-panel .setting-controller .gernal-advance-setting:nth-child(1) { display: table; }
+.main-box .customize-container .setting-panel .setting-controller .gernal-advance-setting h3 { padding: 10px 0; font-size: 16px; font-family: latobold, sans-serif; }
+.main-box .customize-container .setting-panel .setting-controller .gernal-advance-setting .setting-propertity-row { padding: 10px 0; }
+.main-box .customize-container .setting-panel .setting-controller .gernal-advance-setting .setting-propertity-row label { font-size: 14px; font-family: latoregular, sans-serif; padding: 7px 0; }
+.main-box .customize-container .setting-panel .setting-controller .gernal-advance-setting .setting-propertity-row label input { position: relative; top: 2px; margin-right: 5px; }
+.main-box .customize-container .save-cancel-controller { position: absolute; vertical-align: bottom; bottom: 10px; right: 27px; }
+.main-box .customize-container .save-cancel-controller .save-layout { background: #368393; color: #fff; font-family: latolight, sans-serif; padding: 3px 10px; }
+.main-box .customize-container .save-cancel-controller .cancel-layout { background: #9FA7B0; color: #fff; font-family: latolight, sans-serif; padding: 3px 10px; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+.form-control { box-shadow: none; }
+
+select { outline: none; cursor: pointer; font-size: 14px; border: 1px solid #809a9f; }
+
+.paddingNone { padding: 0px; }
+
+.padding-right-zero { padding-right: 0px; }
+
+.padding-left-zero { padding-left: 0px; }
+
+.line-separator { border-bottom: 1px solid #c6d6d9; }
+
+@media screen and (max-width: 1300px) { .padding-right-zero { padding-left: 0px; } }
+@media screen and (max-width: 991px) { .setting-panel { padding: 0px; }
+  .padding-right-zero { padding-left: 0px; }
+  .main-box .customize-container { display: inherit; }
+  .main-box .customize-container .cutomizeResult { height: auto; margin-bottom: 20px; }
+  .main-box .customize-container .cutomizeResult .layoutContainer { position: inherit; top: 0; -webkit-transform: none; -ms-transform: none; transform: none; padding: 10px 0; }
+  .main-box .customize-container .save-cancel-controller { position: inherit; top: 0; -webkit-transform: none; -ms-transform: none; transform: none; padding: 10px; }
+  .main-box .customize-container .setting-panel, .main-box .customize-container .cutomizeResult { display: inherit; }
+  .main-box .customize-container .setting-panel .setting-controller { background: #fff; height: auto; } }
+
+/*# sourceMappingURL=page.css.map */
